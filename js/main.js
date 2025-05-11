@@ -4380,17 +4380,6 @@
         }
       });
     }
-    if (certificatesSlider) {
-      new Swiper(certificatesSlider, {
-        modules: [Navigation],
-        slidesPerView: "auto",
-        spaceBetween: 24,
-        navigation: {
-          nextEl: ".certificates__slider-next",
-          prevEl: ".certificates__slider-prev"
-        }
-      });
-    }
     if (reviewsSlider) {
       new Swiper(reviewsSlider, {
         modules: [Navigation],
