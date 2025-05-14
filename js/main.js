@@ -4368,6 +4368,9 @@
     const reviewsSlider = document.querySelector(".reviews__slider");
     const questionsItems = document.querySelector(".questions__items");
     const footerBtnScrollUp = document.querySelector(".footer__scroll-up");
+    const serviceCertificatesSlider = document.querySelector(
+      ".service-certificates__slider"
+    );
     if (services) {
       services.addEventListener("click", (event2) => {
         const target = event2.target;
@@ -4420,6 +4423,18 @@
           top: 0,
           behavior: "smooth"
         });
+      });
+    }
+    if (serviceCertificatesSlider) {
+      new Swiper(serviceCertificatesSlider, {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 24,
+        modules: [Navigation],
+        navigation: {
+          nextEl: ".service-certificates__btn-next",
+          prevEl: ".service-certificates__btn-prev"
+        }
       });
     }
   });
